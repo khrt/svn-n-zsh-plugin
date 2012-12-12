@@ -6,7 +6,7 @@ For `agnoster` zsh theme:
 
 ```
 prompt_svn() {
-  if svn_inside; then
+  if svn_is_inside; then
     ZSH_THEME_SVN_PROMPT_DIRTY='±'
     local ref dirty
     if svn_parse_dirty; then
