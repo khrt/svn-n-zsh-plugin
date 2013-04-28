@@ -2,12 +2,12 @@
 #
 #
 function svn_prompt() {
-  if svn_in; then
+  if svn_is_inside; then
     local ref dirty
     if svn_parse_dirty; then
       dirty=$ZSH_THEME_SVN_PROMPT_DIRTY
     fi
-    echo -n "$(svn_branch_name) $(svn_rev)$dirty"
+    echo -n " $(svn_branch_name) $(svn_rev)$dirty"
   fi
 }
 
