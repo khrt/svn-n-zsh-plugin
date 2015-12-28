@@ -1,10 +1,17 @@
-#SVN-n
+# NOTE
+
+The plugin was fully rewriten and based on a default oh-my-zsh plugin
+and was included to the default oh-my-zsh bundle (see [#1490](https://github.com/robbyrussell/oh-my-zsh/pull/1490)).
+
+# SVN-n
+
 Improved version of SVN plugin provided with the [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh).
 
-###Example
+### Example
+
 For `agnoster` zsh theme:
 
-```
+```zsh
 prompt_svn() {
   if svn_is_inside; then
     ZSH_THEME_SVN_PROMPT_DIRTY='±'
