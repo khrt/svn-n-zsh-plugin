@@ -13,6 +13,12 @@ For `agnoster` zsh theme:
 
 ```zsh
 prompt_svn() {
+
+  local PL_BRANCH_CHAR
+  () {
+    local LC_ALL="" LC_CTYPE="en_US.UTF-8"
+    PL_BRANCH_CHAR=$'\ue0a0'         # 
+  }
   if svn_is_inside; then
     ZSH_THEME_SVN_PROMPT_DIRTY='±'
     local ref dirty
@@ -22,8 +28,9 @@ prompt_svn() {
     else
       prompt_segment green black
     fi
-    echo -n "⭠ $(svn_branch_name) $(svn_rev)$dirty"
+    echo -n "$PL_BRANCH_CHAR $(svn_branch_name) $(svn_rev)$dirty"
   fi
+
 }
 
 ...
