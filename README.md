@@ -6,6 +6,8 @@ and was included to the default oh-my-zsh bundle (see [#1490](https://github.com
 # SVN-n
 
 Improved version of SVN plugin provided with the [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh).
+## Install 
+* `oh-my-zsh` - `git clone https://github.com/khrt/svn-n-zsh-plugin.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/svn-n` and add `svn-n` to `$plugins` on `~/.zshrc`
 
 ### Example
 
